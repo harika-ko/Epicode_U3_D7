@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SingleBook from './Components/SingleBook';
 import horrorArray from './Data/horror.json';
 import BookList from './Components/BookList';
-import { Container, Row, Col } from "react-bootstrap";
 import FilterBookList from './Components/FilterBookList';
+import AddComment from './Components/AddComment';
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
         <BookList books={horrorArray} />
         </div>*/}
         <FilterBookList book={horrorArray} />
+
       </div>
     </div>
   );

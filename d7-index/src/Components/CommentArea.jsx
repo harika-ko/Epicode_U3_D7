@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import CommentList from "./CommentList"
-import BookList from "./BookList"
+import AddComment from "./AddComment"
 
 
 let options = {
@@ -46,6 +46,7 @@ const CommentArea = ({ asin }) => {
         <div>
             <h3>Comments Data</h3>
             {comments && comments.length > 0 && <CommentList commentArray={comments} />}
+            <AddComment asin={asin} />
         </div>
     )
 }
